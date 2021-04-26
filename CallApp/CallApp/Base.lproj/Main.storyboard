@@ -256,6 +256,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addNumberButton" destination="BWV-QU-Wy1" id="62f-7A-b6H"/>
                         <outlet property="asteriskButton" destination="h4h-7F-sQ4" id="lZt-Nt-BYO"/>
                         <outlet property="buttonEight" destination="cJt-yc-5F8" id="KoU-wq-j0d"/>
                         <outlet property="buttonFive" destination="HR2-Eh-PIG" id="I6e-te-Gzd"/>
@@ -269,6 +270,7 @@
                         <outlet property="buttonZero" destination="hZC-lW-0Nf" id="ELj-LY-Boc"/>
                         <outlet property="callButton" destination="IKE-8t-ERX" id="7Zg-ry-FDP"/>
                         <outlet property="hashtagButton" destination="Q0N-yf-sWU" id="B93-og-BbV"/>
+                        <outlet property="numberLabel" destination="O2X-bg-4Q4" id="Coq-A5-m01"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmY-BB-Lic" sceneMemberID="firstResponder"/>
