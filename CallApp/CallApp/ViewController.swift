@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet var buttonEight: UIButton!
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var addNumberButton: UIButton!
+    @IBOutlet var clearSymbolButton: UIButton!
     
     private var buttons: [ String: (attributed: Bool, mainText: String?, secondaryText: String?, target: UIButton)] = [:]
     
@@ -56,6 +57,38 @@ class ViewController: UIViewController {
             } else {
                 formatAttributedString(key)
             }
+            
+            if key != "call" {
+                button.addTarget(self, action: #selector(numericButtonPressed(_:)), for: .touchDown)
+            }
+        }
+        
+        numberLabel.text = ""
+        addNumberButton.isHidden = true
+        clearSymbolButton.isHidden = true
+        clearSymbolButton.addTarget(self, action: #selector(clearSymbolButtonPressed(_:)), for: .touchDown)
+    }
+    
+    @objc
+    func numericButtonPressed(_ sender: UIButton) {
+        let buttonText = sender.titleLabel?.text
+        let text = buttonText?.components(separatedBy: "\n")[0]
+        print(text!)
+        numberLabel.text = "\(numberLabel.text!)\(text!)"
+        
+        if !numberLabel.text!.isEmpty {
+            addNumberButton.isHidden = false
+            clearSymbolButton.isHidden = false
+        }
+    }
+    
+    @objc
+    func clearSymbolButtonPressed(_ sender: UIButton) {
+        numberLabel.text?.removeLast()
+        
+        if numberLabel.text!.isEmpty {
+            addNumberButton.isHidden = true
+            clearSymbolButton.isHidden = true
         }
     }
     

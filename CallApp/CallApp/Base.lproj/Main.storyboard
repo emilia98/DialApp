@@ -71,14 +71,14 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4h-7F-sQ4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4h-7F-sQ4">
                                         <rect key="frame" x="26.666666666666657" y="370" width="85" height="85"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="oBo-nl-m1r"/>
                                             <constraint firstAttribute="height" constant="85" id="sYW-7u-hx1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="﹡">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
@@ -193,6 +193,15 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtP-mM-bwO">
+                                        <rect key="frame" x="256.66666666666669" y="510.66666666666663" width="26.666666666666686" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <imageReference key="image" image="delete.left" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Q0N-yf-sWU" firstAttribute="trailing" secondItem="fwz-AW-dnI" secondAttribute="trailing" id="2LK-VH-jhv"/>
@@ -217,6 +226,7 @@
                                     <constraint firstItem="Q0N-yf-sWU" firstAttribute="bottom" secondItem="hZC-lW-0Nf" secondAttribute="bottom" id="MCU-z5-5f0"/>
                                     <constraint firstItem="IKE-8t-ERX" firstAttribute="top" secondItem="hZC-lW-0Nf" secondAttribute="bottom" constant="30" id="Myp-Ht-VSV"/>
                                     <constraint firstItem="HR2-Eh-PIG" firstAttribute="bottom" secondItem="xNP-w9-L1P" secondAttribute="bottom" id="NOa-Aw-Tbl"/>
+                                    <constraint firstItem="YtP-mM-bwO" firstAttribute="leading" secondItem="Q0N-yf-sWU" secondAttribute="leading" id="OWJ-Td-tTb"/>
                                     <constraint firstItem="hZC-lW-0Nf" firstAttribute="centerY" secondItem="h4h-7F-sQ4" secondAttribute="centerY" id="Okq-5y-di8"/>
                                     <constraint firstItem="Q0N-yf-sWU" firstAttribute="leading" secondItem="fwz-AW-dnI" secondAttribute="leading" id="Pjx-04-QWD"/>
                                     <constraint firstItem="cJt-yc-5F8" firstAttribute="top" secondItem="kAN-q9-BrU" secondAttribute="top" id="PyR-lk-JJG"/>
@@ -224,6 +234,7 @@
                                     <constraint firstItem="mb5-bJ-0oN" firstAttribute="top" secondItem="FqO-A0-kJj" secondAttribute="top" id="UjX-gX-6t8"/>
                                     <constraint firstItem="IKE-8t-ERX" firstAttribute="centerX" secondItem="BaL-FO-EHX" secondAttribute="centerX" id="YhF-DW-ras"/>
                                     <constraint firstItem="fwz-AW-dnI" firstAttribute="leading" secondItem="t4z-i9-3mj" secondAttribute="leading" id="Zcn-S1-bAn"/>
+                                    <constraint firstItem="YtP-mM-bwO" firstAttribute="centerY" secondItem="IKE-8t-ERX" secondAttribute="centerY" id="cUB-1a-qCR"/>
                                     <constraint firstItem="FqO-A0-kJj" firstAttribute="bottom" secondItem="vOY-EX-rGI" secondAttribute="bottom" id="d0q-sH-fYI"/>
                                     <constraint firstItem="Q0N-yf-sWU" firstAttribute="leading" secondItem="hZC-lW-0Nf" secondAttribute="trailing" constant="30" id="eRF-mn-rMH"/>
                                     <constraint firstItem="hZC-lW-0Nf" firstAttribute="leading" secondItem="h4h-7F-sQ4" secondAttribute="trailing" constant="30" id="f6u-Uz-HVT"/>
@@ -269,6 +280,7 @@
                         <outlet property="buttonTwo" destination="FqO-A0-kJj" id="b2Y-4L-7Dk"/>
                         <outlet property="buttonZero" destination="hZC-lW-0Nf" id="ELj-LY-Boc"/>
                         <outlet property="callButton" destination="IKE-8t-ERX" id="7Zg-ry-FDP"/>
+                        <outlet property="clearSymbolButton" destination="YtP-mM-bwO" id="bgn-vo-mIl"/>
                         <outlet property="hashtagButton" destination="Q0N-yf-sWU" id="B93-og-BbV"/>
                         <outlet property="numberLabel" destination="O2X-bg-4Q4" id="Coq-A5-m01"/>
                     </connections>
@@ -279,6 +291,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
